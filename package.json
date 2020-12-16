@@ -9,6 +9,13 @@
   "author": "Želislav Beška",
   "license": "ISC",
   "dependencies": {
+    "normalize-scss": "^7.0.1"
+  },
+  "devDependencies": {
+    "css-loader": "^5.0.1",
+    "node-sass": "^5.0.0",
+    "sass-loader": "^10.1.0",
+    "style-loader": "^2.0.0",
     "webpack": "^5.10.3",
     "webpack-cli": "^4.2.0"
   }
