@@ -18,7 +18,7 @@ module.exports = {
         ]
       },
       {
-        test: /\.(svg|png|jpg|gif)$/, // any of them will match
+        test: /\.(svg|eot|woff|woff2|ttf|png|jpg|gif)$/, // any of them will match
         use: {
           loader: "file-loader",
           options: {

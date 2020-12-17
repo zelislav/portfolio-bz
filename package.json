@@ -12,6 +12,7 @@
     "normalize-scss": "^7.0.1"
   },
   "devDependencies": {
+    "@fortawesome/fontawesome-free": "^5.15.1",
     "css-loader": "^5.0.1",
     "file-loader": "^6.2.0",
     "node-sass": "^5.0.0",
