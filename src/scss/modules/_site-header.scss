@@ -2,10 +2,32 @@
   padding: 10px 0;
   width: 100%;
   background-color: $mainOrange;
+  position: absolute;
+  z-index: 2;
+
+  @include atMedium {
+    position: fixed;
+    background-color: rgba($mainBlue, .3);
+  }
+
+  &__logo {
+    background-color: $mainBlue;
+    padding: 10px;
+    color: $white;
+    font-size: 3rem;
+  }
 
   &__menu-content {
     position: relative;
-    padding-top: 10px;
     text-align: center;
+    display: flex;
+    align-items: center;
+  }
+
+  &__btn-container {
+
+    @include atMedium {
+      // align-items: 'right'
+    }
   }
 } 

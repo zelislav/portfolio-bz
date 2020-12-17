@@ -3,6 +3,10 @@
     padding-top: 80px;
   }
 
+  &__medium-aligned {
+    margin-top: 50px;
+  }
+
   @include atMedium {
     &__medium-flex {
       display: flex;
@@ -18,6 +22,12 @@
 
     &__medium-center {
       justify-content: center;
+    }
+
+    &__medium-aligned {
+      align-items: center;
+      padding: 0 15px;
+      margin-top: 0;
     }
 
     &__medium-space {
