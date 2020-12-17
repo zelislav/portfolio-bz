@@ -1,0 +1,33 @@
+.row {
+  &--t-padding {
+    padding-top: 80px;
+  }
+
+  @include atMedium {
+    &__medium-flex {
+      display: flex;
+    }
+
+    &__medium-4 {
+      width: 37%;
+    }
+
+    &__medium-6 {
+      width: 50%;
+    }
+
+    &__medium-8 {
+      width: 63%;
+    }
+  }
+
+  @include atLarge {
+    &__large-flex {
+      display: flex;
+    }
+
+    &__large-4 {
+      width: 33.33%;
+    }
+  }
+} 
