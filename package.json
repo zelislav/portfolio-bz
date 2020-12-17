@@ -4,7 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start": "webpack --config webpack.config.js"
+    "start": "webpack serve --config webpack.dev.js",
+    "build": "webpack --config webpack.prod.js"
   },
   "author": "Želislav Beška",
   "license": "ISC",
@@ -17,9 +18,12 @@
     "file-loader": "^6.2.0",
     "html-webpack-plugin": "^4.5.0",
     "node-sass": "^5.0.0",
+    "resolve-url-loader": "^3.1.2",
     "sass-loader": "^10.1.0",
     "style-loader": "^2.0.0",
     "webpack": "^5.10.3",
-    "webpack-cli": "^4.2.0"
+    "webpack-cli": "^4.2.0",
+    "webpack-dev-server": "^3.11.0",
+    "webpack-merge": "^5.7.2"
   }
 }
