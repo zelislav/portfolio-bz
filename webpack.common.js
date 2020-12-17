@@ -20,6 +20,10 @@ module.exports = {
         ]
       },
       {
+        test: /\.html$/,
+        use: ["html-loader"]
+      },
+      {
         test: /\.(svg|eot|woff|woff2|ttf|png|jpg|gif)$/, // any of them will match
         use: {
           loader: "file-loader",

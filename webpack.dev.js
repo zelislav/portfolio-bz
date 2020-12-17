@@ -6,6 +6,7 @@ module.exports = merge(common, {
   mode: "development",
   output: {
     filename: "./src/index.js",
-    path: path.resolve(__dirname, "dist")
+    path: path.resolve(__dirname, "dist"),
+    publicPath: ''
   }
 });
