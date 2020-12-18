@@ -1,3 +1,4 @@
+import MobileMenu from './app/modules/MobileMenu'; 
 import './scss/styles.scss';
 
-console.log("my js"); 
+const mobileMenu = new MobileMenu(); 
