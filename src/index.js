@@ -1,6 +1,8 @@
+/* eslint-disable no-unused-vars */
 import MobileMenu from './app/modules/MobileMenu';
 import RevealOnScroll from './app/modules/RevealOnScroll';
 import './scss/styles.scss';
 
 const mobileMenu = new MobileMenu();
-const revealOnScroll = new RevealOnScroll();
+new RevealOnScroll(document.querySelectorAll('.feature-item'), '85%');
+new RevealOnScroll(document.querySelectorAll('.experience'), '60%');
