@@ -7,6 +7,11 @@
   transition: background-color .3s ease-out;
   padding: 80px 0 0;
 
+  // Desktop sticky header
+  &--dark {
+    background-color: rgba(23, 51, 72, .85);
+  }
+
   &--is-expanded {
     background-color: rgba($mainBlue, .55);
   }
@@ -32,6 +37,11 @@
     @include atMedium {
       left: 15px;
       transform: translateX(0);
+
+      // Desktop sticky header
+      .site-header--dark & {
+        transform: scale(.6);
+      }
     }
   }
 
