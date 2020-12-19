@@ -1,5 +1,5 @@
 .wrapper {
-  // overflow: hidden;
+  overflow: hidden;
   padding-left: 18px;
   padding-right: 18px;
   max-width: 1236px;
@@ -9,15 +9,4 @@
   &--narrow {
     max-width: 470px;
   }
-
-  &--header {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-
-    @include atMedium {
-      justify-content: flex-end;
-      position: relative;
-    }
-  }
-} 
+}

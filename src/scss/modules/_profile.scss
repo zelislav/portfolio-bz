@@ -1,0 +1,12 @@
+.profile {
+
+  &__img {
+    @include atSmall {
+      max-width: 50%;
+    }
+
+    @include atMedium {
+      max-width: 80%;
+    }
+  }
+} 

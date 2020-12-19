@@ -7,6 +7,18 @@
     margin-top: 50px;
   }
 
+  &__img {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  @include atSmall {
+    &__small-aligned {
+      text-align: center;
+    }
+  }
+
   @include atMedium {
     &__medium-flex {
       display: flex;

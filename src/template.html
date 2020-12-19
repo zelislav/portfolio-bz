@@ -10,7 +10,7 @@
   <body>
 
     <header class="site-header">
-      <div class="wrapper wrapper--header">
+      <div class="wrapper">
         <div class="site-header__logo">
           <i class="far fa-smile site-header__logo__graphic icon"></i>
         </div>
@@ -18,16 +18,16 @@
           <div class="site-header__menu-icon__middle"></div>
         </div>
         <div class="site-header__menu-content">
-          <nav class="primary-nav">
+          <div class="site-header__btn-container">
+            <a href="#" class="btn open-modal">Get in Touch</a>
+          </div>
+          <nav class="primary-nav primary-nav--pull-right">
             <ul>
               <li><a href="#about-me" id="about-me-link">About me</a></li>
               <li><a href="#skill" id="skill-link">Skills</a></li>
               <li><a href="#experience" id="experience-link">Experience</a></li>
             </ul>
           </nav>
-          <div class="site-header__btn-container">
-            <a href="#" class="btn open-modal">Get in Touch</a>
-          </div>
         </div>
       </div>
     </header>
@@ -36,8 +36,7 @@
       <div class="large-hero__text-content">
         <div class="wrapper">
           <h1 class="large-hero__title">Želislav Beška</h1>
-          <h2 class="large-hero__subtitle">Frontend developer</h2>
-          <p class="large-hero__description">Lorem Ipsum is simply dummy text of the printing and typesetting industry</p>
+          <h2 class="large-hero__description">Software developer primary interested in Frontend</h2>
         </div>
       </div>
     </div>
@@ -45,15 +44,19 @@
     <div id="about-me" class="page-section generic-content" data-matching-link="#about-me-link">
       <div class="wrapper">
         <h2 class="section-title">About <strong>me</strong> </h2>
-
+  
         <div class="row">
-          <div class="row__medium-flex">
-            <div class="row__medium-4">
-              <img src="./assets/images/avatar.png" alt="Image">
+          <div class="row__medium-flex profile">
+            <div class="row__medium-4 row__img">
+              <img class="profile__img" src="./assets/images/my_photo.jpg" alt="Image">
             </div>
             <div class="row__medium-8 row__medium-flex row__medium-aligned">
               <div class="generic-content">
-                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.</p>
+                <p>I would like to highlight that I am a self-initiated and a self-taught IT professional. 
+                  Five years have passed since my begginings as an intern, until now when I can work independently on projects.</p>
+                <p>The experience that I have gained in my work so far certainly helps me to present myself as a person who is up to challenges.</p>
+                <p>In the skills sections below, I have listed some of the technologies and tools that I used so far in previous jobs.
+                  Also I described shortly which approach I used while codding this portfolio.</p>
               </div>
             </div>
           </div>
@@ -86,7 +89,11 @@
                   <p class="feature-item__tools">SASS: My favorite css extension</p>
                 </li>
               </ul>
-              <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.</p>
+              <div class="generic-content"><p>There are many CSS frameworks out there. I listed some of them that I used earlier and 
+                I decided to write this portfolio with a <strong>BEM</strong> approach (block, element, modifier) 
+                which helps me to name CSS classes. At the same time it helps me with writing clean and transparent HTML markup. 
+                Also, I used the CSS <strong>Flexbox</strong> Layout Module, which makes it easier to design a flexible responsive layout structure 
+                without using float or positioning. Also its Browser Support is really good.</p></div>
             </div>
             <div class="row__medium-6 feature-item">
               <h3 class="feature-item__title">Java Script</h3>
@@ -104,7 +111,13 @@
                   <p class="feature-item__tools">Usage of JS libraries​: Jquery, Highcharts, Scrollmagic, Data-fns</p>
                 </li>
               </ul>
-              <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.</p>
+              <div class="generic-content"><p>Despite my previous experience with React, which the setup of this project, 
+                I opted for pure native JavaScript and an object-oriented way of codding. 
+                In addition to much faster loading and execution modern JavaScript has excellent browser support.
+                To write highly organized JavaScript I usually structure my code in a few steps:
+                <strong>1.Selecting elements from the DOM</strong> <strong>2.Event handling</strong> <strong>3.Defining functionality</strong>.
+                This type of organization I applied to a few features (mobile menu, sticky header, revealing boxes on a scroll, modal window) 
+                that can be found on this project.</p></div>
             </div>
           </div>
   
@@ -125,7 +138,12 @@
                   <p class="feature-item__tools">Grunt</p>
                 </li>
               </ul>
-              <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.</p>
+              <div class="generic-content"><p>Two crucial things from my point of view during building a site or an app are <strong>automation</strong> and <strong>organization</strong>. 
+                Automation is when we force a computer to execute some task for us. 
+                The organization is clearly written code (many separate files which are related to a certain part of a website ) 
+                and just one bundled file (css & js) which browser will load quickly to satisfied high performances. 
+                To accomplish all of that here I decide to use Webpack, which is really great tool. 
+                With which I made a different setup for the development and production environment.</p></div>
             </div>
             <div class="row__medium-6 feature-item">
               <h3 class="feature-item__title">Other tehnologies​</h3>
@@ -147,7 +165,10 @@
                   <p class="feature-item__tools"> Design toolkits​ : Avocode, Sketch, Photoshop</p>
                 </li>
               </ul>
-              <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.</p>
+              <div class="generic-content"><p>The technologies listed here have not been used in portfolio development. But nothing less they fall into techs and tools which I have used in my career so far.
+                Because FE developers operating in close interaction between designers and backend developers.
+                Solid knowledge and usage server language as it is PHP (I also met with Node - big brother of JS and his framework Express) and Databases as an indispensable collection of structured pieces of information from one side and 
+                listed design tools help us to implement user interface from provided mockups & designs from other side are extremely important.</p></div>
             </div>
           </div>
 
@@ -168,7 +189,10 @@
                   <p class="feature-item__tools">Usage of Linux</p>
                 </li>
               </ul>
-              <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.</p>
+              <div class="generic-content"><p>The day I was introduced to Linux was really one of the turning points in choosing my current occupation.
+                The very thought that there is some terminal in which by entering some commands can directly affect on computer behave 
+                is at the same moment fascinating and scary. With that powerful tool, you basically can customize your computer environment and 
+                it’s something that really attracted me and with time spent on it, it has become part of my daily routine.</p></div>
             </div>
           </div>
 
@@ -187,9 +211,9 @@
               <div class="experience__photo">
                 <img src="./assets/images/company_1.png" alt="Company 1">
               </div>
-              <h3 class="experience__title">Company</h3>
-              <h4 class="experience__subtitle">Place</h4>
-              <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.</p>
+              <h3 class="experience__title">Homepage</h3>
+              <h4 class="experience__subtitle">Office</h4>
+              <p>I applied for and passed the practice part at the Homepage digital agency and then worked for them for a while. Those were my early beginnings in discovering successful teamwork. I worked as a Front-End developer, mostly on creating Wordpress sites, theming and creating them from scratch and small Facebook applications.</p>
             </div>
           </div>
 
@@ -198,9 +222,9 @@
               <div class="experience__photo">
                 <img src="./assets/images/company_2.png" alt="Company 2">
               </div>
-              <h3 class="experience__title">Company</h3>
-              <h4 class="experience__subtitle">Place</h4>
-              <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.</p>
+              <h3 class="experience__title">Katipult</h3>
+              <h4 class="experience__subtitle">Remote</h4>
+              <p>Afterward, I was in a team of associates of various profiles and experiences working on a crowdfunding software for a Canadian company Katipult. In close interaction between designers and backend developers, some of my duties here were creating of responsive reusable templates, email templates, bug fixing, and other new features in a dashboard.</p>
             </div>
           </div>
 
@@ -209,9 +233,10 @@
               <div class="experience__photo">
                 <img src="./assets/images/company_3.png" alt="Company 3">
               </div>
-              <h3 class="experience__title">Company</h3>
-              <h4 class="experience__subtitle">Place</h4>
-              <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.</p>
+              <h3 class="experience__title">Altereos</h3>
+              <h4 class="experience__subtitle">Remote</h4>
+              <p>Freelancing and work on interesting projects got me to this client. 
+                Where we were developing components for page builder.</p>
             </div>
           </div>
 
@@ -220,9 +245,10 @@
               <div class="experience__photo">
                 <img src="./assets/images/company_4.png" alt="Company 4">
               </div>
-              <h3 class="experience__title">Company</h3>
-              <h4 class="experience__subtitle">Place</h4>
-              <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.</p>
+              <h3 class="experience__title">Optima</h3>
+              <h4 class="experience__subtitle">Remote</h4>
+              <p>Knowledge of react and my desire to expand my work area with a mobile apps tooks me to the
+                Optima mobile app and React Native. Which seemed to me a logical choice for this chalange because combines the best parts of native development with React and it's a best-in-class JavaScript library for building user interfaces for Android and iOS.</p>
             </div>
           </div>
 
@@ -232,9 +258,7 @@
 
     <footer class="site-footer">
       <div class="wrapper">
-        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.
-          <a href="#" class="btn btn--orange open-modal">Get in Touch</a>
-        </p>
+        <p><span class="site-footer__text">Don't hesitate to contact me</span> <a href="#" class="btn btn--orange open-modal">Get in Touch</a></p>
       </div>
     </footer>
 
@@ -242,19 +266,19 @@
       <div class="modal__inner">
         <h2 class="section-title section-title--blue section-title--less-margin">Get in <strong>Touch</strong></h2>
         <div class="wrapper wrapper--narrow">
-          <p class="modal__description">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+          <p class="modal__description">If my skills seem interesting to you, feel free to contact me.</p>
         </div>
         <div class="social-icons">
-          <a href="#" class="social-icons__icon">
-            <i class="fas fa-phone icon"></i>
+          <a href="https://drive.google.com/file/d/1DSxEILR0kjqRDpuZznm2Z9FR1W3RUQAX/view?usp=sharing" class="social-icons__icon" target="_blank">
+            <i class="fas fa-file-pdf icon"></i>
           </a>
-          <a href="#" class="social-icons__icon">
+          <a href="mailto:zeljobeska@gmail.com?subject=Mail from my portfolio" class="social-icons__icon">
             <i class="fas fa-envelope-square icon"></i>
           </a>
-          <a href="#" class="social-icons__icon">
+          <a href="https://www.linkedin.com/in/zelislav-beska/" class="social-icons__icon" target="_blank">
             <i class="fab fa-linkedin icon"></i>
           </a>
-          <a href="#" class="social-icons__icon">
+          <a href="https://github.com/zelislav" class="social-icons__icon" target="_blank">
             <i class="fab fa-github icon"></i>
           </a>
         </div>
@@ -263,4 +287,4 @@
     </div>
 
   </body>
-</html> 
+</html>

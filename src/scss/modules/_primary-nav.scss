@@ -5,6 +5,12 @@
     padding-top: 0;
   }
 
+  &--pull-right {
+    @include atMedium {
+      float: right;
+    }
+  }
+
   ul {
     margin: 10px 0;
     padding: 0;
@@ -43,14 +49,14 @@
     font-size: .8rem;
     background-color: rgba($mainBlue, .5);
 
-    &.is-current-link {
-      color: #fabb69;
-    }
-
     @include atMedium {
       font-size: 1rem;
       padding: 12px 0;
       background-color: transparent;
+
+      &.is-current-link {
+        color: #fabb69;
+      }
     }
   }
 } 
