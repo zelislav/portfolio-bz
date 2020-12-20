@@ -1,9 +1,4 @@
 .primary-nav {
-  padding-top: 10px;
-
-  @include atMedium {
-    padding-top: 0;
-  }
 
   &--pull-right {
     @include atMedium {
