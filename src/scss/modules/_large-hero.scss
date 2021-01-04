@@ -1,9 +1,12 @@
 .large-hero {
   position: relative;
   min-height: 420px;
-  background: url('../assets/images/hero--large.jpg') center center no-repeat;
-  background-size: cover;
   width: 100%;
+
+  &.lazyloaded {
+    background: url('../assets/images/hero--large.jpg') top center no-repeat;
+    background-size: cover;
+  }
 
   &__text-content {
     padding-top: 88px;
