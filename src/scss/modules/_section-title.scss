@@ -1,8 +1,11 @@
 .section-title {
   font-size: 2.55rem;
   font-weight: 300;
-  text-align: center;
   margin-top: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
 
   @include atSmall {
     font-size: 3.75rem;
@@ -22,10 +25,10 @@
   }
 
   &__icon {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
     margin-bottom: .6rem;
+    width: 65px;
+    height: 65px;
+    fill: $white;
 
     @include atSmall {
       position: relative;

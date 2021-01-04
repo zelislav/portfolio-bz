@@ -30,7 +30,8 @@
     background-color: $mainBlue;
     padding: 20px;
     color: $white;
-    font-size: 3rem; 
+    font-size: 3rem;
+    fill: $white;
 
     @include atMedium {
       left: auto;
@@ -40,6 +41,12 @@
       .site-header--dark & {
         transform: scale(.6);
       }
+    }
+
+    &__graphic {
+      width: 60px;
+      height: 60px;
+      display: block;
     }
   }
 

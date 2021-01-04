@@ -1,11 +1,13 @@
 /* eslint-disable no-undef */
 /* eslint-disable no-unused-vars */
 const path = require('path')
+const SpriteLoaderPlugin = require('svg-sprite-loader/plugin');
+
 
 module.exports = {
   entry: {
     main: './src/index.js',
-    vendor: './src/vendor.js'
+    // vendor: './src/vendor.js'
   },
   module: {
     rules: [
@@ -14,7 +16,7 @@ module.exports = {
         use: ['html-loader']
       },
       {
-        test: /\.(svg|eot|woff|woff2|ttf|png|jpg|gif)$/, // any of them will match
+        test: /\.(eot|woff|woff2|ttf|png|jpg|gif)$/, // any of them will match
         use: {
           loader: 'file-loader',
           options: {
@@ -22,7 +24,17 @@ module.exports = {
             outputPath: 'imgs'
           }
         }
+      },
+      {
+        test: /\.svg$/,
+        use: [
+          'svg-sprite-loader',
+          'svgo-loader'
+        ]
       }
     ]
-  }
+  },
+  plugins: [
+    new SpriteLoaderPlugin()
+  ],
 }
