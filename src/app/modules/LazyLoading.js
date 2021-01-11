@@ -1,7 +1,7 @@
 /* eslint-disable no-unused-vars */
 class LazyLoading {
   constructor () {
-    this.targets = document.querySelectorAll('img');
+    this.targets = document.querySelectorAll('.lazy-img');
     this.events();
   }
 
@@ -15,7 +15,7 @@ class LazyLoading {
             const src = img.getAttribute('data-lazy');
     
             img.setAttribute('src', src);
-            img.classList.add('lazy-img__fade');
+            img.classList.add('lazy-img__fade-in');
     
             observer.disconnect();
           }

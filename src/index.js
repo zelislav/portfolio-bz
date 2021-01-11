@@ -33,6 +33,6 @@ import linux from './assets/icons/linux.svg';
 const lazyLoading = new LazyLoading();
 const mobileMenu = new MobileMenu();
 new RevealOnScroll(document.querySelectorAll('.feature-item'), '85%');
-new RevealOnScroll(document.querySelectorAll('.experience'), '60%');
+new RevealOnScroll(document.querySelectorAll('.experience'), '65%');
 const stickyHeader = new StickyHeader();
 const modal = new Modal();
