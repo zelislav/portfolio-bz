@@ -1,8 +1,10 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;500;700&display=swap');
 @import "../../node_modules/normalize-scss/fork-versions/default/normalize";
 @import "base/_variables";
 @import "base/_mixins";
 @import "base/_global";
 
+@import "modules/_lazy-img";
 @import "modules/_wrapper";
 @import "modules/_large-hero";
 @import "modules/_primary-nav";
@@ -15,8 +17,8 @@
 @import "modules/_experience";
 @import "modules/_page-section";
 @import "modules/_page-section";
-@import "modules/btn";
+@import "modules/_btn";
 @import "modules/_reaveal-item";
 @import "modules/_modal";
 @import "modules/_social-icons";
-@import "modules/profile";
+@import "modules/_profile";

@@ -1,0 +1,9 @@
+.lazy-img {
+  opacity: 0;
+  transition: all 500ms;
+
+  &__fade {
+    opacity: 1;
+    transition: all 500ms;
+  }
+}

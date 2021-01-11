@@ -1,6 +1,6 @@
 .primary-nav {
 
-  &--pull-right {
+  &__pull-right {
     @include atMedium {
       float: right;
     }
@@ -36,13 +36,13 @@
   }
 
   a {
-    color: $white;
+    color: $color_white;
     font-weight: 300;
     text-decoration: none;
     display: block;
     padding: 5px 8px;
     font-size: .8rem;
-    background-color: rgba($mainBlue, .5);
+    background-color: rgba($color_blue, .5);
 
     @include atMedium {
       font-size: 1rem;

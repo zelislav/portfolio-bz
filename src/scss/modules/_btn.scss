@@ -1,12 +1,12 @@
 .btn {
-  background-color: $mainBlue;
-  color: $white;
+  background-color: $color_blue;
+  color: $color_white;
   text-decoration: none;
   padding: .75rem 1.2rem;
   display: inline-block;
 
   &--orange {
-    background-color: $mainOrange;
+    background-color: $color_orange;
   }
 
   &--large {

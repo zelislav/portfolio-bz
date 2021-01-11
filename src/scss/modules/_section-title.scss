@@ -21,14 +21,14 @@
   }
 
   &--blue {
-    color: $mainBlue;
+    color: $color_blue;
   }
 
   &__icon {
     margin-bottom: .6rem;
     width: 65px;
     height: 65px;
-    fill: $white;
+    fill: $color_white;
 
     @include atSmall {
       position: relative;

@@ -21,7 +21,6 @@
   "dependencies": {
     "express": "^4.17.1",
     "jquery-smooth-scroll": "^2.2.0",
-    "lazysizes": "^5.3.0",
     "normalize-scss": "^7.0.1",
     "waypoints": "^4.0.1"
   },

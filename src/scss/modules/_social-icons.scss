@@ -2,7 +2,7 @@
 	text-align: center;
 
 	&__icon {
-		background-color: $mainOrange;
+		background-color: $color_orange;
 		display: inline-block;
 		margin: 0 5px 5px 5px;
 		width: 33%;
@@ -21,10 +21,10 @@
 			left: 50%;
       transform: translate(-50%, -50%);
       font-size: 40px;
-      color: $white;
+      color: $color_white;
       max-width: 50px;
       height: 100%;
-      fill: $white;
+      fill: $color_white;
 		}
 	}
 } 

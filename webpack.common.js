@@ -7,7 +7,6 @@ const SpriteLoaderPlugin = require('svg-sprite-loader/plugin');
 module.exports = {
   entry: {
     main: './src/index.js',
-    vendor: './src/vendor.js'
   },
   module: {
     rules: [
@@ -20,13 +19,13 @@ module.exports = {
               list: [
                 {
                   tag: 'img',
-                  attribute: 'data-src',
+                  attribute: 'data-lazy',
                   type: 'src',
                 },
                 {
                   tag: 'img',
-                  attribute: 'data-srcset',
-                  type: 'srcset',
+                  attribute: 'src',
+                  type: 'src',
                 },
               ]
             }

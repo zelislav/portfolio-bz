@@ -1,4 +1,5 @@
 /* eslint-disable no-unused-vars */
+import LazyLoading from './app/modules/LazyLoading';
 import MobileMenu from './app/modules/MobileMenu';
 import RevealOnScroll from './app/modules/RevealOnScroll';
 import StickyHeader from './app/modules/StickyHeader';
@@ -29,6 +30,7 @@ import jira from './assets/icons/jira.svg';
 import docker from './assets/icons/docker.svg';
 import linux from './assets/icons/linux.svg';
 
+const lazyLoading = new LazyLoading();
 const mobileMenu = new MobileMenu();
 new RevealOnScroll(document.querySelectorAll('.feature-item'), '85%');
 new RevealOnScroll(document.querySelectorAll('.experience'), '60%');

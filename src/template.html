@@ -12,17 +12,16 @@
     <header class="site-header">
       <div class="wrapper">
         <div class="site-header__logo">
-          <svg class="site-header__logo__graphic icon"><use xlink:href="#smile"></use></svg>
-
+          <svg class="site-header__logo--graphic icon"><use xlink:href="#smile"></use></svg>
         </div>
         <div class="site-header__menu-icon">
-          <div class="site-header__menu-icon__middle"></div>
+          <div class="site-header__menu-icon--middle"></div>
         </div>
         <div class="site-header__menu-content">
           <div class="site-header__btn-container">
             <a href="#" class="btn open-modal">Get in Touch</a>
           </div>
-          <nav class="primary-nav primary-nav--pull-right">
+          <nav class="primary-nav primary-nav__pull-right">
             <ul>
               <li><a href="#about-me" id="about-me-link">About me</a></li>
               <li><a href="#skills" id="skills-link">Skills</a></li>
@@ -42,14 +41,14 @@
       </div>
     </div>
 
-    <div id="about-me" class="page-section generic-content" data-matching-link="#about-me-link">
+    <section id="about-me" class="page-section generic-content" data-matching-link="#about-me-link">
       <div class="wrapper">
         <h2 class="section-title">About me</h2>
   
         <div class="row">
           <div class="row__medium-flex profile">
             <div class="row__medium-4 row__img">
-              <img class="profile__img lazyload" data-src="./assets/images/my_photo.jpg" alt="My photo">
+              <img data-lazy="./assets/images/my_photo.jpg" alt="My photo" class="lazy-img profile__img">
             </div>
             <div class="row__medium-8 row__medium-flex row__medium-aligned">
               <div class="generic-content">
@@ -63,9 +62,9 @@
           </div>
         </div>
       </div>
-    </div>
+    </section>
 
-    <div id="skills" class="page-section page-section--blue" data-matching-link="#skills-link">
+    <section id="skills" class="page-section page-section--blue" data-matching-link="#skills-link">
       <div class="wrapper">
         <h2 class="section-title">
           <svg class="icon section-title__icon"><use xlink:href="#skill"></use></svg>My Skills
@@ -238,9 +237,9 @@
 
         </div>
       </div>
-    </div>
+    </section>
 
-    <div id="experience" class="page-section generic-content" matching-link="#experience-link">
+    <section id="experience" class="page-section generic-content" matching-link="#experience-link">
       <div class="wrapper">
         <h2 class="section-title">Work Experience</h2>
 
@@ -249,7 +248,7 @@
           <div class="row__large-4">
             <div class="experience">
               <div class="experience__photo">
-                <img class="lazyload" data-src="./assets/images/company_1.png" alt="Company 1">
+                <img data-lazy="./assets/images/company_1.png" alt="Company 1" class="lazy-img">
               </div>
               <h3 class="experience__title">Homepage</h3>
               <h4 class="experience__subtitle">Office</h4>
@@ -260,7 +259,7 @@
           <div class="row__large-4">
             <div class="experience">
               <div class="experience__photo">
-                <img class="lazyload" data-src="./assets/images/company_2.png" alt="Company 2">
+                <img data-lazy="./assets/images/company_2.png" alt="Company 2" class="lazy-img">
               </div>
               <h3 class="experience__title">Katipult</h3>
               <h4 class="experience__subtitle">Remote</h4>
@@ -271,7 +270,7 @@
           <div class="row__large-4">
             <div class="experience">
               <div class="experience__photo">
-                <img class="lazyload" data-src="./assets/images/company_3.png" alt="Company 3">
+                <img data-lazy="./assets/images/company_3.png" alt="Company 3" class="lazy-img">
               </div>
               <h3 class="experience__title">Altereos</h3>
               <h4 class="experience__subtitle">Remote</h4>
@@ -283,7 +282,7 @@
           <div class="row__large-4">
             <div class="experience experience--last">
               <div class="experience__photo">
-                <img class="lazyload" data-src="./assets/images/company_4.png" alt="Company 4">
+                <img data-lazy="./assets/images/company_4.png" alt="Company 4" class="lazy-img">
               </div>
               <h3 class="experience__title">Optima</h3>
               <h4 class="experience__subtitle">Remote</h4>
@@ -294,7 +293,7 @@
 
         </div>
       </div>
-    </div>
+    </section>
 
     <footer class="site-footer">
       <div class="wrapper">
