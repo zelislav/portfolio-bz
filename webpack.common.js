@@ -3,7 +3,6 @@
 const path = require('path')
 const SpriteLoaderPlugin = require('svg-sprite-loader/plugin');
 
-
 module.exports = {
   entry: {
     main: './src/index.js',

@@ -1,6 +1,7 @@
 /* eslint-disable no-undef */
 const path = require('path')
 const common = require('./webpack.common')
+const sass = require('sass')
 const { merge } = require('webpack-merge')
 const { CleanWebpackPlugin } = require('clean-webpack-plugin')
 const MiniCssExtractPlugin = require('mini-css-extract-plugin')
@@ -41,7 +42,12 @@ module.exports = merge(common, {
           MiniCssExtractPlugin.loader, // 4. Extract css into files
           'css-loader', // 3. Turns css into common js
           'postcss-loader', // 2. An extra loader which autoprefixer needs
-          'sass-loader' // 1. Turns sass into css
+          {
+            loader: "sass-loader",
+            options: {
+              implementation: sass,
+            },
+          }, // 1. Turns sass into css
         ]
       }
     ]

@@ -7,7 +7,7 @@ class MobileMenu {
 	}
 
 	events() {
-    this.menuIcon.addEventListener('click', this.toggleTheMenu.bind(this))
+    this.menuIcon.addEventListener('click', this.toggleTheMenu.bind(this));
 	}
 
 	toggleTheMenu() {
