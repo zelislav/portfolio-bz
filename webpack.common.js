@@ -32,7 +32,7 @@ module.exports = {
         }
       },
       {
-        test: /\.(eot|woff|woff2|ttf|png|jpg|gif)$/, // any of them will match
+        test: /\.(png|jpe?g|gif)$/i, // any of them will match
         use: {
           loader: 'file-loader',
           options: {
@@ -44,8 +44,13 @@ module.exports = {
       {
         test: /\.svg$/,
         use: [
-          'svg-sprite-loader',
-          'svgo-loader'
+          { 
+            loader: 'svg-sprite-loader', 
+            options: {} 
+          },
+          { 
+            loader: 'svgo-loader' 
+          },
         ]
       }
     ]

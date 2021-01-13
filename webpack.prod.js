@@ -12,7 +12,7 @@ const HtmlWebpackPlugin = require('html-webpack-plugin')
 module.exports = merge(common, {
   mode: 'production',
   output: {
-    filename: '[name].[contentHash].bundle.js',
+    filename: '[name].[contenthash].bundle.js',
     path: path.resolve(__dirname, 'dist'),
     publicPath: ''
   },
@@ -31,7 +31,7 @@ module.exports = merge(common, {
     ]
   },
   plugins: [
-    new MiniCssExtractPlugin({ filename: '[name].[contentHash].css' }),
+    new MiniCssExtractPlugin({ filename: '[name].[contenthash].css' }),
     new CleanWebpackPlugin()
   ],
   module: {
@@ -41,7 +41,16 @@ module.exports = merge(common, {
         use: [
           MiniCssExtractPlugin.loader, // 4. Extract css into files
           'css-loader', // 3. Turns css into common js
-          'postcss-loader', // 2. An extra loader which autoprefixer needs
+          {
+            loader: 'postcss-loader',
+            options: {
+              postcssOptions: {
+                plugins: [
+                  require('autoprefixer')
+                ]
+              }
+            }
+          }, // 2. An extra loader which autoprefixer needs
           {
             loader: "sass-loader",
             options: {
