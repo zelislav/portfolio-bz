@@ -1,6 +1,9 @@
 {
   "name": "portfolio-bz",
   "version": "1.0.0",
+  "engines": {
+    "node": "18.15.0"
+  },
   "description": "",
   "repository": {
     "type": "git",
