@@ -5,7 +5,6 @@ const sass = require('sass')
 const { merge } = require('webpack-merge')
 const { CleanWebpackPlugin } = require('clean-webpack-plugin')
 const MiniCssExtractPlugin = require('mini-css-extract-plugin')
-const OptimizeCSSAssetsPlugin = require('optimize-css-assets-webpack-plugin')
 const TerserJSPlugin = require('terser-webpack-plugin')
 const HtmlWebpackPlugin = require('html-webpack-plugin')
 
@@ -19,7 +18,6 @@ module.exports = merge(common, {
   optimization: {
     minimizer: [
       new TerserJSPlugin(),
-      new OptimizeCSSAssetsPlugin(),
       new HtmlWebpackPlugin({
         template: './src/template.html',
         minify: {
